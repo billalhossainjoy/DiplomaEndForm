@@ -35,7 +35,11 @@ export default function App() {
           <Input label={"Registration No:"} {...register("reg")} />
           <Select
             {...register("tech")}
-            options={["Computer Science and Technology"]}
+            options={[
+              "Computer Science and Technology",
+              "Printing",
+              "Graphic Design",
+            ]}
             label={"Technology:"}
           />
           <Select
