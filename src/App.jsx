@@ -21,7 +21,7 @@ export default function App() {
       {/* <Form info={info} depertment={depertment} /> */}
       <div className=" w-full bg-gray-200">
         <div className="">
-          <h1 className="text-4xl p-2">দায় মুক্তি ফর্ম </h1>
+          <h1 className="text-4xl p-2">Exemption form </h1>
           <div></div>
         </div>
         <div className="h-[1px] bg-black"></div>
@@ -72,6 +72,25 @@ export default function App() {
                 ) : (
                   <p className="bg-white w-28 rounded py-1 text-sky-600 font-bold flex justify-center">
                     Donload
+                  </p>
+                )
+              }
+            </PDFDownloadLink>
+            <PDFDownloadLink
+              document={
+                <Form
+                  depertment={depertment}
+                  info={{ technology: "Computer/Printing/Design" }}
+                />
+              }
+              fileName="GAI-form.pdf"
+            >
+              {({ blob, url, loading, error }) =>
+                loading ? (
+                  "Loading document..."
+                ) : (
+                  <p className="text-white w-36 rounded py-1 bg-sky-600 font-bold flex justify-center">
+                    Blank Tamplate
                   </p>
                 )
               }
