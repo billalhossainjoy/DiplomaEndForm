@@ -21,7 +21,7 @@ export default function App() {
       {/* <Form info={info} depertment={depertment} /> */}
       <div className=" w-full bg-gray-200">
         <div className="">
-          <h1 className="text-4xl p-2">Title</h1>
+          <h1 className="text-4xl p-2">দায় মুক্তি ফর্ম </h1>
           <div></div>
         </div>
         <div className="h-[1px] bg-black"></div>
