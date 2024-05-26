@@ -1,11 +1,11 @@
 export const info = {
-  name: "বিল্লাল হসসাইন জয়",
-  technology: "computer",
-  Roll: "50",
-  RegistrationNo: "1668",
-  Session: "2021",
-  Semester: "5th",
-  Shift: "1st",
+  name: "",
+  technology: "",
+  Roll: "",
+  RegistrationNo: "",
+  Session: "",
+  Semester: "",
+  Shift: "",
 };
 
 export const depertment = [
