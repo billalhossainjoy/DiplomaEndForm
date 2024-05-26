@@ -3,7 +3,7 @@ import Form from "./Components/Form";
 import Input from "./Components/Input";
 import Select from "./Components/Select";
 import { depertment, info } from "./Components/tableData";
-import { PDFDownloadLink } from "@react-pdf/renderer";
+import { PDFDownloadLink, PDFViewer } from "@react-pdf/renderer";
 
 export default function App() {
   const { register, watch } = useForm();

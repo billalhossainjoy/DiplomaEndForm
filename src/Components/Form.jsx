@@ -144,6 +144,21 @@ const styles = StyleSheet.create({
     width: "40%",
     padding: 10,
     margin: 10,
+    display: "flex",
+    flexDirection: "column",
+    gap: 40,
+  },
+  sign: {
+    width: "100%",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  sign2: {
+    width: 150,
+    display: "flex",
+    flexDirection: "column",
+    textAlign: "center",
   },
 });
 
@@ -273,25 +288,42 @@ export default function Form({ info, depertment = [] }) {
             </View>
             <Text style={styles.text4}>
               আমানতের টাকা ........................ হতে টাকা কর্তন করে অবশিষ্ট
-              ........................ টাকা ফেরত রদান করা জেতে পারে ।
+              ........................ টাকা ফেরত প্রদান করা জেতে পারে ।
             </Text>
-            <Text style={styles.text5}>হিসাব রক্ষক রেজিস্টার অধ্যক্ষ</Text>
+            <View style={styles.sign}>
+              <View style={styles.sign2}>
+                <Text>.....................</Text>
+                <Text style={styles.text}>হিসাব রক্ষক</Text>
+              </View>
+              <View style={styles.sign2}>
+                <Text>.....................</Text>
+                <Text style={styles.text}>রেজিস্টার </Text>
+              </View>
+              <View style={styles.sign2}>
+                <Text>.....................</Text>
+                <Text style={styles.text}>অধ্যক্ষ </Text>
+              </View>
+            </View>
           </View>
         </View>
         <View style={styles.Wrapper}>
           <View style={styles.box}>
             <Text style={styles.text}>
-              উপরিমতে টাকা .................. মাত্র গ্রহন করলাম ।
+              উপরিমতে টাকা .................. মাত্র গ্রহন করলাম
             </Text>
-            <Text style={styles.text}>.................................</Text>
-            <Text style={styles.text}>ছাত্র ছাত্রীর স্বাক্ষর </Text>
+            <View>
+              <Text style={styles.text}>.................................</Text>
+              <Text style={styles.text}>ছাত্র ছাত্রীর স্বাক্ষর </Text>
+            </View>
           </View>
           <View style={styles.box}>
             <Text style={styles.text}>
-              উপরিমতে টাকা .................. মাত্র প্রদান করলাম ।
+              উপরিমতে টাকা .................. মাত্র প্রদান করলাম
             </Text>
-            <Text style={styles.text}>.................................</Text>
-            <Text style={styles.text}> কোষাধক্ষ্য </Text>
+            <View>
+              <Text style={styles.text}>.................................</Text>
+              <Text style={styles.text}> কোষাধক্ষ্য </Text>
+            </View>
           </View>
         </View>
       </Page>
